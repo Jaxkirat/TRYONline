@@ -1,0 +1,90 @@
+/* Background and Overlay */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/background.jpg'); /* Ensure background image is in the correct folder */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text visibility */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* White Block for Result */
+.result-container {
+    width: 8cm;
+    height: 8cm;
+    margin: 0 auto;
+    background-color: #fff; /* White block */
+    border-radius: 10px;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00d4ff;
+    text-decoration: none;
+    border: 2px solid #00d4ff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #00d4ff;
+    color: #000;
+}
+
+/* Download Button Styling */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00d4ff;
+    text-decoration: none;
+    border: 2px solid #00d4ff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #00d4ff;
+    color: #000;
+}

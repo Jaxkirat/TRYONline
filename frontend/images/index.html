@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRYONline - Virtual Dressing Room</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <script>
+    function previewImage(event, previewElementId) {
+        const reader = new FileReader();
+        reader.onload = function() {
+            const output = document.getElementById(previewElementId);
+            output.src = reader.result;
+            output.style.display = 'block'; // Show the image preview
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+    </script>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Welcome to TRYONline</h1>
+            <p>Upload your picture and the garment you'd like to try on!</p>
+            <form action="result.html">
+                <div class="upload-row">
+                    <div class="upload-container">
+                        <label for="userImage">Upload Your Picture:</label>
+                        <input type="file" id="userImage" name="userImage" accept="image/*" required onchange="previewImage(event, 'userImagePreview')">
+                        <div class="image-preview">
+                            <img id="userImagePreview" src="" alt="User Image Preview">
+                        </div>
+                    </div>
+                    <div class="upload-container">
+                        <label for="garmentImage">Upload Garment Picture:</label>
+                        <input type="file" id="garmentImage" name="garmentImage" accept="image/*" required onchange="previewImage(event, 'garmentImagePreview')">
+                        <div class="image-preview">
+                            <img id="garmentImagePreview" src="" alt="Garment Image Preview">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Try On</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Background and Overlay */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/background.jpg'); /* Ensure background image is in the correct folder */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text visibility */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 700px; /* Increased width to accommodate horizontal layout */
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* Horizontal Layout for Upload Containers */
+.upload-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add spacing between the two upload containers */
+}
+
+.upload-container {
+    width: 48%; /* Adjust width to fit two containers side by side */
+    text-align: left;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 2px solid #00d4ff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+/* Image Preview Styling */
+.image-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image-preview img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #00d4ff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0084a0;
+}
