@@ -13,7 +13,11 @@ https://github.com/user-attachments/assets/f13b6173-4037-4bcd-afb0-73b38e54ceef
 
 
 ## Features
-
+- Upload photos and garments to generate virtual try-on previews.
+- Interactive and user-friendly interface for easy navigation.
+- Utilizes deep learning models for accurate garment overlay and fitting.
+- Supports multiple garment types and user photos.
+- High-quality image output for a realistic virtual try-on experience.
 
 
 ## Technologies Used
